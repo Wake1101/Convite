@@ -1,40 +1,48 @@
 #app {
     display: grid;
+    grid-template-columns: 1fr 2fr;
     padding: 1.25rem;
-    grid-template-columns: 31.25% 68.75%;
+    gap: 1.25rem;
+
     height: 100vh;
     overflow: hidden;
-    gap: 1.25rem;
 }
 
 aside {
-    border-radius: .75rem;
-    background: url(../assets/Background.png) no-repeat;
-    background-size: cover;
-    
-    .aside-container {
-        padding: 2rem;        
-    
+    /* background-image: url(../assets/images/background.jpg); */
+    background: linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%), url(../assets/images/background.jpg) lightgray 50% / cover no-repeat;
+    border-radius: .5rem;
+
+    & .aside-container {
+
+        padding: 2rem;
+
         & img {
-            max-width: 3rem;
+            max-height: 3rem;
         }
-    
+
         & h1 {
             padding-block: 1rem .25rem;
             font: var(--font-logo);
             color: var(--pink);
         }
-    
+        
         & p {
+            font-weight: 300;
             color: var(--text-heading);
         }
     }
 }
 
-
-
-
-
 main {
     overflow: auto;
+
+    background-color:  var(--shape-body);
+    border-radius: .5rem;
+    padding: 5rem 8.12rem;
+
+    & h2 {
+        font: var(--font-heading-md);
+        color: var(--text-heading);
+    }
 }

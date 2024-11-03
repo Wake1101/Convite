@@ -1,0 +1,40 @@
+@import url(radio.css);
+input,
+select,
+textarea {
+    appearance: none;
+    width: 100%;
+    color: var(--text-heading);
+    font: var(--font-body-md);
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    padding: 0.8125rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font: var(--font-body-sm);
+    padding-bottom: .75rem;
+    margin-top: 1rem;
+}
+
+.col-2 {
+    gap: 1rem;
+}   
+
+.textarea-wrapper {
+    & label {
+        display: block;
+    }
+
+    & textarea {
+        height: 136px;
+    }
+}
+
+

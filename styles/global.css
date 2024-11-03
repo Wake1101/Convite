@@ -5,9 +5,23 @@
 }
 
 :root {
+    /* fonts family*/
+    --family-leckerli: "Leckerli One", serif;
+    --family-baloo: "Baloo 2", serif;
+    --family-open: "Open Sans", serif;
+
+    /* fonts */
+    --font-logo: normal 2.5rem var(--family-leckerli);
+    --font-heading-md: bold 1.75rem var(--family-baloo);
+    --font-heading-sm: bold 1.12rem var(--family-baloo);
+    --font-body-md: normal 1rem var(--family-open);
+    --font-body-sm: normal .87rem var(--family-open);
+    --font-body-xs: normal .75rem var(--family-open);
+
+    /* colors */
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
-    --brand-drak: #1D6FB6;
+    --brand-dark: #1D6FB6;
 
     --purple: #B259FF;
     --fuschia: #FF59F9;
@@ -32,22 +46,19 @@
 
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
-
-    --font-family-leckerli: "Leckerli One", cursive;
-    --font-family-baloo: "Baloo 2", sans-serif;
-    --font-family-open-sans: "Open Sans", sans-serif;
-
-    --font-logo: 400 3rem var(--font-family-leckerli);
-    --font-heading-md: bold  1.75rem var(--font-family-baloo);
-    --font-heading-sm: bold 1.12rem var(--font-family-baloo);
-    --font-body-md: normal 1rem var(--font-family-open-sans);
-    --font-body-sm: normal .87rem var(--font-family-open-sans);
-    --font-body-xs: normal .75rem var(--font-family-open-sans);
-
 }
 
 body {
     background-color: var(--shape-background);
     color: var(--text-body);
     font: var(--font-body-md);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
 }
