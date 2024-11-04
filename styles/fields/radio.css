@@ -1,36 +1,119 @@
-.radio-wrapper {
-    cursor: pointer;
-    display: flex;
-    border: 1px solid var(--input-stroke);
-    border-radius: .5rem;
-    background-color: var(--input-base);
+.about {
+    .radio-wrapper {
+        cursor: pointer;
+        display: flex;
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        background-color: var(--input-base);
+    }
+    
+    .radio-inner {
+        margin: .25rem;
+        padding: .57rem 1.25rem;
+        position: relative;
+        
+        gap: .5rem;
+    
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+            
+        }
+        
+        &:has(:checked) {
+            background-color: var(--shape-body);
+            border-radius: .25rem;
+            color: var(--text-heading);
+    
+            & svg path {
+                fill: var(--);
+            }
+        }
+        
+    
+    }
 }
 
-.radio-inner {
-    margin: .25rem;
-    padding: .57rem 1.25rem;
-    position: relative;
+.personalization {
+    max-width: 35rem;
     
-    gap: .5rem;
 
-    & input,
-    & input:focus,
-    & input:hover {
-        all: unset;
-        position: absolute;
-        inset: 0;
+    & .radio-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
         
-    }
-    
-    &:has(:checked) {
-        background-color: var(--shape-body);
-        border-radius: .25rem;
-        color: var(--text-heading);
+        
 
-        & svg path {
-            fill: var(--brand-light);
+        & .radio-inner {
+            padding: 6px;
+            border-radius: 999px;
+
+            & :has(:checked){
+                border: 2px solid var(--brand-light);
+                border-radius: 999px;
+            }
+
+            & input {
+                position: relative;
+                width: 1.75rem;
+                height: 1.75rem;
+                border-radius: 999px;
+                border: 6px solid var(--shape-button);
+            }
+
+            & #light-blue {
+                    background-color: var(--brand-light);
+            }
+                
+
+            & #navy {
+                background-color: var(--navy);
+            }
+
+            & #purple {
+                background-color: var(--purple);
+            }
+
+            & #fuschia {
+                background-color: var(--fuschia);
+            }
+
+            & #pink {
+                background-color: var(--pink);
+            }
+
+            & #red {
+                background-color: var(--danger);
+            }
+
+            & #orange {
+                background-color: var(--orange);
+            }
+
+            & #yellow {
+                background-color: var(--yellow);
+            }
+
+            & #lime {
+                background-color: var(--lime);
+            }
+
+            & #green {
+                background-color: var(--green);
+            }
+
+            & #cyan {
+                background-color: var(--cyan);
+            }
+
+            & input:hover {
+                cursor: pointer;
+                border-color: var(--shape-hover);
+            }
         }
     }
-    
-
 }
