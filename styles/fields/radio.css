@@ -36,16 +36,24 @@
 }
 
 .personalization {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
+=======
+>>>>>>> 9a6564e297dba82dccad323491cf48721b066d68
     & label {
         display: inline-block;
     }
 
     & .radio-wrapper {
+<<<<<<< HEAD
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+=======
+        display: flex;
+        justify-content: space-between;
+>>>>>>> 9a6564e297dba82dccad323491cf48721b066d68
 
         & .radio-inner {
             border: 2px solid transparent;
@@ -149,6 +157,7 @@
         
     }
 }
+<<<<<<< HEAD
 
 .grid-layout {
     
@@ -199,3 +208,5 @@
     }
     }
 }
+=======
+>>>>>>> 9a6564e297dba82dccad323491cf48721b066d68
