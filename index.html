@@ -99,82 +99,145 @@
 
                     <fieldset class="personalization">
                         <legend>
-                            <img src="assets/icons/paintbrush.svg" alt="">
+                            <img src="assets/icons/paintbrush.svg" alt="icone de um pincel">
                             Personalização
                         </legend>
 
                         <label>Cor principal</label>
                         <div class="radio-wrapper">
-
-                            <div class="radio-inner light-blue">
-                                    <div class="input-wrapper">
-                                        <input type="radio" name="event-color" id="light-blue" value="light-blue">
-                                    </div>
-                            </div>
-                            
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="navy" value="navy">
-                                </div>
+                            <div class="radio-inner" id="light-blue-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="light-blue">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="purple" value="purple">
-                                </div>
+                            <div class="radio-inner" id="navy-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="navy">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="fuschia" value="fuschia">
-                                </div>
+                            <div class="radio-inner" id="purple-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="purple">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="pink" value="pink">
-                                </div>
+                            <div class="radio-inner" id="fuschia-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="fuschia">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="red" value="red">
-                                </div>
+                            <div class="radio-inner" id="pink-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="pink">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="orange" value="orange">
-                                </div>
+                            <div class="radio-inner" id="red-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="red">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="yellow" value="yellow">
-                                </div>
+                            <div class="radio-inner" id="orange-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="orange">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="lime" value="lime">
-                                </div>
+                            <div class="radio-inner" id="yellow-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="yellow">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="green" value="green">
-                                </div>
+                            <div class="radio-inner" id="lime-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="lime">
                             </div>
 
-                            <div class="radio-inner light-blue">
-                                <div class="input-wrapper">
-                                    <input type="radio" name="event-color" id="cyan" value="cyan">
-                                </div>
+                            <div class="radio-inner" id="green-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="green">
                             </div>
 
-                            
+                            <div class="radio-inner" id="cyan-button">
+                                <span></span>
+                                <input type="radio" name="event-color" id="cyan">
+                            </div>
                         </div>
+                        
+                        <div class="grid-layout">
+                            <label>Tema do evento</label>
+                            
+                            <div class="radio-wrapper">
+                                <div class="card">
+                                    <img src="assets/images/aniversary.png" alt="Imagem de um bolo de aniversário">
+                                    <input type="radio" name="event-theme" id="aniversary-event">
+                                    <label for="aniversary-event">Aniversário</label>
+                                </div>
 
+                                <div class="card">
+                                    <img src="assets/images/child.png" alt="Imagem de uma festa infantil">
+                                    <input type="radio" name="event-theme" id="child-event">
+                                    <label for="child-event">Infantil</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/graduation.png" alt="Imagem de um chapéu de formatura">
+                                    <input type="radio" name="event-theme" id="graduation-event">
+                                    <label for="graduation-event">Formatura</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/wedding.png" alt="Imagem de alianças de casamento">
+                                    <input type="radio" name="event-theme" id="wedding-event">
+                                    <label for="wedding-event">Casamento</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/baby-shower.png" alt="Imagem de uam flor e leços umidecidos">
+                                    <input type="radio" name="event-theme" id="baby-shower-event">
+                                    <label for="baby-shower-event">Chá de bebê</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/bridal-shower.png" alt="Imagem de uma cozinha">
+                                    <input type="radio" name="event-theme" id="bridal-shower-event">
+                                    <label for="bridal-shower-event">Chá de panela</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/carnival.png" alt="Imagem de confetis de carnaval">
+                                    <input type="radio" name="event-theme" id="carnival-event">
+                                    <label for="carnival-event">Carnaval</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/easter.png" alt="Imagem de ovos de páscoa com tema de coelhos">
+                                    <input type="radio" name="event-theme" id="easter-event">
+                                    <label for="easter-event">Páscoa</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/saint-john.png" alt="Imagem de bandeiras de são joão">
+                                    <input type="radio" name="event-theme" id="saint-john-event">
+                                    <label for="saint-john-event">São João</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/halloween.png" alt="Imagem de abóboras com rostos de halloween">
+                                    <input type="radio" name="event-theme" id="halloween-event">
+                                    <label for="halloween-event">halloween</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/christmas.png" alt="Imagem de presentes de natal">
+                                    <input type="radio" name="event-theme" id="christmas-event">
+                                    <label for="christmas-event">Natal</label>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/people.png" alt="Imagem de várias pessoas juntas">
+                                    <input type="radio" name="event-theme" id="other-event">
+                                    <label for="other-event">Outro</label>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
